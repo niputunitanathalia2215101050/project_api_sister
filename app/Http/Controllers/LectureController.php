@@ -84,6 +84,9 @@ class LectureController extends Controller
     public function destroy($id)
     {
         Lecture::destroy($id);
-        return response()->json(null, 204);
+        return response()->json([
+            'message' => 'Lecture deleted successfully'
+        ]);
     }
+
 }

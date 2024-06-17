@@ -11,3 +11,4 @@ class Lecture extends Model
     protected $fillable = ['name', 'nip', 'email', 'phone_number', 'faculty', 'major', 'study_program'];
     use HasFactory;
 }
+
